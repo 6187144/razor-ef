@@ -16323,6 +16323,26 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\HeritageCollege\\Desktop\\w21\\razor-ef\\Pages\\Games\\Create.cshtml",
+      "TargetPath": "Pages\\Games\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HeritageCollege\\Desktop\\w21\\razor-ef\\Pages\\Games\\Index.cshtml",
+      "TargetPath": "Pages\\Games\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HeritageCollege\\Desktop\\w21\\razor-ef\\Pages\\Games\\Edit.cshtml",
+      "TargetPath": "Pages\\Games\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HeritageCollege\\Desktop\\w21\\razor-ef\\Pages\\Games\\Delete.cshtml",
+      "TargetPath": "Pages\\Games\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\HeritageCollege\\Desktop\\w21\\razor-ef\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -16330,6 +16350,11 @@
     {
       "FilePath": "c:\\Users\\HeritageCollege\\Desktop\\w21\\razor-ef\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HeritageCollege\\Desktop\\w21\\razor-ef\\Pages\\Games\\Details.cshtml",
+      "TargetPath": "Pages\\Games\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
