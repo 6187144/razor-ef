@@ -4,9 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+var serverVersion = new MySqlServerVersion(new Version(10, 4, 22));
+var connectionString = "server=localhost;user=root;password=;database=gamestore";
 
 builder.Services.AddDbContext<GameStoreContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("GameStoreContext")));
+    // options.UseSqlite(builder.Configuration.GetConnectionString("GameStoreContext")));
+    options.UseMySql(connectionString, serverVersion));
 
 var app = builder.Build();
 
