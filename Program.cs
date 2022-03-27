@@ -4,7 +4,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-var serverVersion = new MySqlServerVersion(new Version(10, 4, 22));
+
+var _logger = LoggerFactory.Create(cnf =>
+{
+    cnf.AddConsole();
+    cnf.AddConfiguration(builder.Configuration.GetSection("Logging"));
+}).CreateLogger("Program");
+
+var serverVersion = new MariaDbServerVersion(new Version(10, 4, 22));
+
+//_logger.Log(LogLevel.Information, "db: server-version:" + serverVersion.ToString());
 var connectionString = "server=localhost;user=root;password=;database=gamestore";
 
 builder.Services.AddDbContext<GameStoreContext>(options =>

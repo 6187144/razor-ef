@@ -10,6 +10,22 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<p>
+<form>
+    <p>
+        Filter Titles:
+        <input type="text" asp-for="Query" />
+        Filter Dates:
+        <input type="checkbox" id="DDisable">
+        <select id="BeforeAfter" asp-for="BefAft">
+            <option value="Before">On or Before</option>
+            <option value="After">On or After</option>
+        </select>
+        <input type="text" id="DateQ" asp-for="DQuery" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+</p>
 <table class="table">
     <thead>
         <tr>
@@ -20,8 +36,8 @@
                 @Html.DisplayNameFor(model => model.Game[0].Price)
             </th>
             <th>
-                Published
-                @* @Html.DisplayNameFor(model => model.Game[0].DatePublished) *@
+                @* Published *@
+                @Html.DisplayNameFor(model => model.Game[0].DatePublished)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Game[0].Genre)
@@ -35,6 +51,7 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.Title)
+                    @* @Html.Raw($"{item.Title}") *@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Price)
